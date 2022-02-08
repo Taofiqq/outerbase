@@ -81,12 +81,7 @@ const AboutLink = styled.div`
   border-bottom: ${({ index }) => (index === 0 ? "4px solid #000000" : "none")};
   margin-right: 96px;
 `;
-const ALink = styled.a`
-  cursor: pointer;
-`;
-const BLink = styled.a`
-  cursor: pointer;
-`;
+
 const LinksContainer = styled.div`
   display: flex;
   justify-content: center;
