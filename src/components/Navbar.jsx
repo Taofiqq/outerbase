@@ -76,6 +76,10 @@ const Logo = styled.div`
 const ImageLogo = styled.img`
   width: 225px;
   height: 48px;
+
+  @media screen and (max-width: 350px) {
+    width: 120px;
+  }
 `;
 const AboutLink = styled.div`
   border-bottom: ${({ index }) => (index === 0 ? "4px solid #000000" : "none")};

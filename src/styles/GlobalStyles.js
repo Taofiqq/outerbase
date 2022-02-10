@@ -1,13 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Nunito', sans-serif;
+      
         
     }
         a {
@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     body{
         background: #EDEDED;
         overflow-x: hidden;
-       
+        // font-family: "Nunito", sans-serif;
     }
 `;
 
