@@ -77,8 +77,8 @@ const ImageLogo = styled.img`
   width: 225px;
   height: 48px;
 
-  @media screen and (max-width: 350px) {
-    width: 120px;
+  @media screen and (max-width: 450px) {
+    width: 180px;
   }
 `;
 const AboutLink = styled.div`
