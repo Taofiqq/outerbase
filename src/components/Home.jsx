@@ -121,6 +121,10 @@ const Hero = styled.section`
   display: flex;
   flex-direction: column;
   margin-top: 5.06rem;
+
+  @media screen and (min-width: 760px) {
+    flex-direction: row;
+  }
 `;
 const Left = styled.div`
   display: flex;
@@ -130,6 +134,10 @@ const Left = styled.div`
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   margin-top: 116px;
+
+  @media screen and (min-width: 760px) {
+    flex: 2;
+  }
 `;
 const HeroList = styled.p`
   height: 40px;
@@ -187,6 +195,10 @@ const Right = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+
+  @media screen and (min-width: 760px) {
+    flex: 1;
+  }
 `;
 
 const HeroImg = styled.img`
@@ -212,12 +224,20 @@ const InformationContainer = styled.section`
   justify-content: center;
   padding: 0 2.25rem;
   z-index: -10;
+
+  @media screen and (min-width: 760px) {
+    height: 50vh;
+  }
 `;
 
 const Industries = styled.div`
   padding-left: 1.38rem;
   padding-right: 1.38rem;
   margin-bottom: 6.63rem;
+
+  @media screen and (min-width: 760px) {
+    display: none;
+  }
 `;
 
 const IndustryWrapper = styled.div`
@@ -232,9 +252,23 @@ const IndustryWrapper = styled.div`
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
   margin-top: -22rem;
+
+  @media screen and (min-width: 760px) {
+    width: 36rem;
+    height: 15rem;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08);
+    // margin-left: 6rem;
+    // margin-right: 6rem;
+  }
 `;
 const IndustryContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   padding-bottom: 5rem;
+
+  @media screen and (min-width: 760px) {
+    flex-direction: row;
+  }
 `;
 const IndustryText = styled.h1`
   font-style: normal;
