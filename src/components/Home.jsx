@@ -200,16 +200,19 @@ const HeroImg = styled.img`
     height: 30rem;
   }
 `;
-// const Curve = styled.div`
-//   width: 100vw;
-//   height: 599px;
-//   background-color: #e5e5e5;
-//   border-radius: 299.5px 0px 0px 0px;
-//   position: absolute;
-//   top: 20rem;
-//   right: -15rem;
-//   z-index: 1;
-// `;
+
+const InformationContainer = styled.section`
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.25rem;
+  z-index: -10;
+`;
 
 const Industries = styled.div`
   padding-left: 1.38rem;
@@ -228,7 +231,7 @@ const IndustryWrapper = styled.div`
   border-radius: 24px;
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
-  margin-top: -39rem;
+  margin-top: -22rem;
 `;
 const IndustryContainer = styled.div`
   padding-bottom: 5rem;
@@ -271,20 +274,6 @@ const Icon = styled.div`
 const IconText = styled.p`
   font-size: 11px;
 `;
-
-const InformationContainer = styled.section`
-  background-color: #fff;
-  width: 100%;
-  height: 150vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 2.25rem;
-  z-index: -10;
-`;
-
 const InformationWrapper = styled.div`
   display: flex;
   flex-direction: column;
