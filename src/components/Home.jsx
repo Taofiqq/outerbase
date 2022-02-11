@@ -257,16 +257,16 @@ const HeroImg = styled.img`
     height: 30rem;
   }
 `;
-const Curve = styled.div`
-  width: 100vw;
-  height: 599px;
-  background-color: #e5e5e5;
-  border-radius: 299.5px 0px 0px 0px;
-  position: absolute;
-  top: 20rem;
-  right: -15rem;
-  z-index: 1;
-`;
+// const Curve = styled.div`
+//   width: 100vw;
+//   height: 599px;
+//   background-color: #e5e5e5;
+//   border-radius: 299.5px 0px 0px 0px;
+//   position: absolute;
+//   top: 20rem;
+//   right: -15rem;
+//   z-index: 1;
+// `;
 
 // const Industries = styled.div`
 //   width: 100%;
