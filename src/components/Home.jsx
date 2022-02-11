@@ -381,19 +381,19 @@ const HomeContainer = styled.div`
 const InformationContainer = styled.section`
   background-color: #fff;
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 2.25rem;
 
-  @media screen and (max-width: 250px) {
-    height: 40vh;
-  }
-  @media screen and (max-width: 1224px) {
-    height: 35vh;
-  }
+  // @media screen and (max-width: 250px) {
+  //   height: 40vh;
+  // }
+  // @media screen and (max-width: 1224px) {
+  //   height: 35vh;
+  // }
 `;
 
 const InformationWrapper = styled.div`
