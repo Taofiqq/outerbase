@@ -1,7 +1,7 @@
-import { NavLink, Link } from "react-router-dom";
+// import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 import logo2 from "../img/logo.svg";
-import person from "../img/person.png";
+// import person from "../img/person.png";
 
 export default function Home() {
   return (
