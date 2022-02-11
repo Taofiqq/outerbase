@@ -24,52 +24,51 @@ export default function Home() {
             <LinkStyle to="/contact">Get In Touch</LinkStyle>
           </HeroButton>
         </Left>
-        {/* <Curve></Curve> */}
+
         <Right>
           <HeroImg src={person} alt="" />
         </Right>
       </Hero>
 
-      <Industries>
-        <IndustryWrapper>
-          <IndustryText>Industries Served</IndustryText>
-
-          <IndustryContainer>
-            <IndustryBox>
-              <Icon>
-                <IndustryImage src={aviation} />
-              </Icon>
-              <IconText>Aviation</IconText>
-            </IndustryBox>
-            <IndustryBox>
-              <Icon>
-                <IndustryImage src={file} />
-              </Icon>
-              <IconText>General Contracts</IconText>
-            </IndustryBox>
-            <IndustryBox>
-              <Icon>
-                <IndustryImage src={code} />
-              </Icon>
-              <IconText>Information Technology</IconText>
-            </IndustryBox>
-            <IndustryBox>
-              <Icon>
-                <IndustryImage src={house} />
-              </Icon>
-              <IconText>Real Estate</IconText>
-            </IndustryBox>
-            <IndustryBox>
-              <Icon>
-                <IndustryImage src={security} />
-              </Icon>
-              <IconText>Security</IconText>
-            </IndustryBox>
-          </IndustryContainer>
-        </IndustryWrapper>
-      </Industries>
-
       <InformationContainer>
+        <Industries>
+          <IndustryWrapper>
+            <IndustryText>Industries Served</IndustryText>
+
+            <IndustryContainer>
+              <IndustryBox>
+                <Icon>
+                  <IndustryImage src={aviation} />
+                </Icon>
+                <IconText>Aviation</IconText>
+              </IndustryBox>
+              <IndustryBox>
+                <Icon>
+                  <IndustryImage src={file} />
+                </Icon>
+                <IconText>General Contracts</IconText>
+              </IndustryBox>
+              <IndustryBox>
+                <Icon>
+                  <IndustryImage src={code} />
+                </Icon>
+                <IconText>Information Technology</IconText>
+              </IndustryBox>
+              <IndustryBox>
+                <Icon>
+                  <IndustryImage src={house} />
+                </Icon>
+                <IconText>Real Estate</IconText>
+              </IndustryBox>
+              <IndustryBox>
+                <Icon>
+                  <IndustryImage src={security} />
+                </Icon>
+                <IconText>Security</IconText>
+              </IndustryBox>
+            </IndustryContainer>
+          </IndustryWrapper>
+        </Industries>
         <InformationWrapper>
           <ParaOne>
             Incorporated in 2022, Outerbase is a specialist in the
@@ -115,7 +114,7 @@ export default function Home() {
 
 const HomeContainer = styled.div`
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 
 const Hero = styled.section`
@@ -194,6 +193,7 @@ const HeroImg = styled.img`
   width: 24.8rem;
   height: 40.13rem;
   object-fit: contain;
+  z-index: -10;
 
   @media screen and (max-width: 299px) {
     width: 20rem;
@@ -212,31 +212,26 @@ const HeroImg = styled.img`
 // `;
 
 const Industries = styled.div`
-  display: flex;
-  // flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-left: 1.38rem;
   padding-right: 1.38rem;
+  margin-bottom: 6.63rem;
 `;
 
 const IndustryWrapper = styled.div`
   width: 346px;
-  height: 580px;
+  height: 620px;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-  background: lavender;
-  border-radius: 2rem;
-  padding: 2.75rem 4.94rem;
-  margin-top: -20rem;
+  background: #fff;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  margin-top: -39rem;
 `;
 const IndustryContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 5rem;
 `;
 const IndustryText = styled.h1`
   font-style: normal;
@@ -257,11 +252,7 @@ const IndustryBox = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 10px;
-  margin-right: 26px;
-
-  @media screen and (max-width: 900px) {
-    margin-bottom: 33px;
-  }
+  margin-bottom: 33px;
 `;
 const IndustryImage = styled.img`
   width: 24px;
@@ -278,18 +269,20 @@ const Icon = styled.div`
   margin-right: 24px;
 `;
 const IconText = styled.p`
-  font-size: 10px;
+  font-size: 11px;
 `;
 
 const InformationContainer = styled.section`
   background-color: #fff;
   width: 100%;
-  height: 80vh;
+  height: 150vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 2.25rem;
+  z-index: -10;
 `;
 
 const InformationWrapper = styled.div`
