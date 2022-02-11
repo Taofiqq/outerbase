@@ -226,7 +226,7 @@ const InformationContainer = styled.section`
   z-index: -10;
 
   @media screen and (min-width: 760px) {
-    height: 50vh;
+    height: 70vh;
   }
 `;
 
