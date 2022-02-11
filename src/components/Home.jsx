@@ -1,12 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 import logo2 from "../img/logo.svg";
-// import person from "../img/person.png";
+import person from "../img/person.png";
 
 export default function Home() {
   return (
     <HomeContainer>
-      {/* <Hero>
+      <Hero>
         <Left>
           <HeroList>
             General Contracts | Project Co-ordination | Procurement | Trading
@@ -19,11 +19,12 @@ export default function Home() {
             <LinkStyle to="/contact">Get In Touch</LinkStyle>
           </HeroButton>
         </Left>
+        {/* <Curve></Curve> */}
         <Right>
-          <Curve></Curve>
           <HeroImg src={person} alt="" />
+          {/* <p>ayoooo</p> */}
         </Right>
-      </Hero> */}
+      </Hero>
 
       {/* <Industries>
         <IndustryWrapper>
@@ -174,122 +175,98 @@ const HomeContainer = styled.div`
   overflow-x: hidden;
 `;
 
-// const Hero = styled.section`
-//   display: flex;
+const Hero = styled.section`
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.06rem;
+`;
+const Left = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  margin-top: 116px;
+`;
+const HeroList = styled.p`
+  height: 40px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #7579e7;
+  margin-bottom: 1.56rem;
+`;
+const HeroText = styled.h1`
+  height: 176px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  @media screen and (max-width: 299px) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+`;
+const HeroButton = styled.button`
+  width: 250px;
+  height: 65px;
+  background: #7579e7;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 40px;
 
-//   @media screen and (max-width: 900px) {
-//     display: flex;
-//     flex-direction: column;
-//   }
-// `;
-// const Left = styled.div`
-//   @media screen and (min-width: 900px) {
-//     flex: 2;
-//     display: flex;
-//     flex-direction: column;
-//     // padding-left: 224px;
-//   }
+  @media screen and (max-width: 299px) {
+    width: 200px;
+  }
+`;
 
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin-top: 116px;
-// `;
-// const HeroList = styled.p`
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 18px;
-//   line-height: 0px;
-//   letter-spacing: 0.04em;
-//   color: #7579e7;
+const LinkStyle = styled(Link)`
+  color: white;
+`;
+const Right = styled.div`
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+`;
 
-//   @media screen and (max-width: 900px) {
-//     width: 296px;
-//     height: 40px;
-//     font-family: Nunito;
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 20px;
-//     text-align: center;
-//     letter-spacing: 0.04em;
-//     color: #7579e7;
-//   }
-// `;
-// const HeroText = styled.h1`
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 62px;
-//   line-height: 68px;
-//   display: flex;
-//   align-items: center;
-//   text-align: left;
-//   margin-top: 32px;
-//   color: #000000;
+const HeroImg = styled.img`
+  width: 24.8rem;
+  height: 40.13rem;
+  object-fit: contain;
 
-//   @media screen and (max-width: 900px) {
-//     width: 320px;
-//     height: 176px;
-//     font-family: Nunito;
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 36px;
-//     line-height: 44px;
-//     display: flex;
-//     align-items: center;
-//     text-align: center;
-//     color: #000000;
-//   }
-// `;
-// const HeroButton = styled.button`
-//   width: 250px;
-//   height: 65px;
-//   background: #7579e7;
-//   border: 2px solid #ffffff;
-//   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
-//   border-radius: 16px;
-//   color: #ffffff;
-//   font-size: 20px;
-//   font-weight: bold;
-//   cursor: pointer;
-//   margin-top: 40px;
-
-//   @media screen and (max-width: 900px) {
-//     margin-top: 40px;
-//   }
-// `;
-
-// const LinkStyle = styled(Link)`
-//   color: white;
-// `;
-// const Right = styled.div`
-//   @media screen and (min-width: 900px) {
-//     flex: 1;
-//     position: relative;
-//     margin-top: 13rem;
-//     margin-right: 124px;
-//   }
-// `;
-
-// const HeroImg = styled.img`
-//   width: 516px;
-//   height: 803px;
-// `;
-// const Curve = styled.div`
-//   width: 947px;
-//   height: 599px;
-//   background-color: #e5e5e5;
-//   border-radius: 299.5px 0px 0px 0px;
-//   position: absolute;
-//   top: 20rem;
-//   right: -15rem;
-//   z-index: -10;
-
-//   @media screen and (max-width: 900px) {
-//     display: none;
-//   }
-// `;
+  @media screen and (max-width: 299px) {
+    width: 20rem;
+    height: 30rem;
+  }
+`;
+const Curve = styled.div`
+  width: 100vw;
+  height: 599px;
+  background-color: #e5e5e5;
+  border-radius: 299.5px 0px 0px 0px;
+  position: absolute;
+  top: 20rem;
+  right: -15rem;
+  z-index: 1;
+`;
 
 // const Industries = styled.div`
 //   width: 100%;
@@ -387,13 +364,6 @@ const InformationContainer = styled.section`
   align-items: center;
   justify-content: center;
   padding: 0 2.25rem;
-
-  // @media screen and (max-width: 250px) {
-  //   height: 40vh;
-  // }
-  // @media screen and (max-width: 1224px) {
-  //   height: 35vh;
-  // }
 `;
 
 const InformationWrapper = styled.div`
