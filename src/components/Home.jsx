@@ -125,7 +125,7 @@ export default function Home() {
         </IndustryWrapper>
       </Industries> */}
 
-      {/* <MainComponent>
+      <MainComponent>
         <ParaOne>
           Incorporated in 2022, Outerbase is a <br /> specialist in the
           Information <br /> Technology and General Contracts <br /> Industry.
@@ -139,9 +139,8 @@ export default function Home() {
         <Line2></Line2>
         <Line3></Line3>
         <Line4></Line4>
-      </MainComponent> */}
+      </MainComponent>
 
-      {/* <Person></Person> */}
       <ContactWrapper>
         <ContactContainer>
           <Text>
