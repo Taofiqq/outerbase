@@ -16,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
     body{
         background: #EDEDED;
         overflow-x: hidden;
-        // font-family: "Nunito", sans-serif;
     }
 `;
 

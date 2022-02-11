@@ -6,7 +6,7 @@ import person from "../img/person.png";
 export default function Home() {
   return (
     <HomeContainer>
-      <Hero>
+      {/* <Hero>
         <Left>
           <HeroList>
             General Contracts | Project Co-ordination | Procurement | Trading
@@ -23,9 +23,9 @@ export default function Home() {
           <Curve></Curve>
           <HeroImg src={person} alt="" />
         </Right>
-      </Hero>
+      </Hero> */}
 
-      <Industries>
+      {/* <Industries>
         <IndustryWrapper>
           <IndustryText>Industries Served</IndustryText>
           <IndustryContainer>
@@ -123,9 +123,9 @@ export default function Home() {
             </IndustryBox>
           </IndustryContainer>
         </IndustryWrapper>
-      </Industries>
+      </Industries> */}
 
-      <MainComponent>
+      {/* <MainComponent>
         <ParaOne>
           Incorporated in 2022, Outerbase is a <br /> specialist in the
           Information <br /> Technology and General Contracts <br /> Industry.
@@ -139,7 +139,7 @@ export default function Home() {
         <Line2></Line2>
         <Line3></Line3>
         <Line4></Line4>
-      </MainComponent>
+      </MainComponent> */}
 
       {/* <Person></Person> */}
       <ContactWrapper>
@@ -158,9 +158,7 @@ export default function Home() {
 
       <FooterWrapper>
         <FooterContainer>
-          <ImageDiv>
-            <FooterImage src={logo2} alt="outerbase-img" />
-          </ImageDiv>
+          <FooterImage src={logo2} alt="outerbase-img" />
           <FooterText>© 2022, Outerbase, All rights reserved.</FooterText>
         </FooterContainer>
       </FooterWrapper>
@@ -170,6 +168,7 @@ export default function Home() {
 
 const HomeContainer = styled.div`
   display: relative;
+  overflow-x: hidden;
 `;
 
 const Hero = styled.section`
@@ -568,6 +567,11 @@ const ContactButton = styled.button`
   font-size: 14px;
   line-height: 0px;
   color: #ffffff;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 240px) {
+    width: 150px;
+  }
 `;
 
 const ContactLink = styled(NavLink)`
@@ -587,12 +591,14 @@ const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const ImageDiv = styled.div`
-  @media screen and (max-width: 900px) {
-    width: 150px;
+const FooterImage = styled.img`
+  width: 14rem;
+  height: 3rem;
+
+  @media screen and (max-width: 240px) {
+    width: 7rem;
   }
 `;
-
 const FooterText = styled.p`
   font-size: 18px;
   line-height: 28px;
@@ -601,9 +607,5 @@ const FooterText = styled.p`
   color: #000000;
   mix-blend-mode: normal;
   opacity: 0.5;
-`;
-
-const FooterImage = styled.img`
-  width: 226;
-  height: 48;
+  margin-top: 1.5rem;
 `;
