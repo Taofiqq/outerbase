@@ -125,21 +125,25 @@ export default function Home() {
         </IndustryWrapper>
       </Industries> */}
 
-      <MainComponent>
-        <ParaOne>
-          Incorporated in 2022, Outerbase is a <br /> specialist in the
-          Information <br /> Technology and General Contracts <br /> Industry.
-        </ParaOne>
-        <ParaTwo>
-          Outerbase caters to the unique requirements of <br /> its users until
-          100% satisfaction is achieved
-        </ParaTwo>
+      <InformationContainer>
+        <InformationWrapper>
+          <ParaOne>
+            Incorporated in 2022, Outerbase is a specialist in the
+            InformationTechnology and General Contracts Industry.
+            {/* Hello */}
+          </ParaOne>
+          {/* <Line></Line>
+          <Line2></Line2> */}
+          <ParaTwo>
+            Outerbase caters to the unique requirements ofits users until 100%
+            satisfaction is achieved
+          </ParaTwo>
+        </InformationWrapper>
 
-        <Line></Line>
-        <Line2></Line2>
         <Line3></Line3>
         <Line4></Line4>
-      </MainComponent>
+      </InformationContainer>
+      <LineContainer></LineContainer>
 
       <ContactWrapper>
         <ContactContainer>
@@ -166,306 +170,275 @@ export default function Home() {
 }
 
 const HomeContainer = styled.div`
-  display: relative;
+  position: relative;
   overflow-x: hidden;
 `;
 
-const Hero = styled.section`
-  display: flex;
+// const Hero = styled.section`
+//   display: flex;
 
-  @media screen and (max-width: 900px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
-const Left = styled.div`
-  @media screen and (min-width: 900px) {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    // padding-left: 224px;
-  }
+//   @media screen and (max-width: 900px) {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// `;
+// const Left = styled.div`
+//   @media screen and (min-width: 900px) {
+//     flex: 2;
+//     display: flex;
+//     flex-direction: column;
+//     // padding-left: 224px;
+//   }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 116px;
-`;
-const HeroList = styled.p`
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 0px;
-  letter-spacing: 0.04em;
-  color: #7579e7;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin-top: 116px;
+// `;
+// const HeroList = styled.p`
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 18px;
+//   line-height: 0px;
+//   letter-spacing: 0.04em;
+//   color: #7579e7;
 
-  @media screen and (max-width: 900px) {
-    width: 296px;
-    height: 40px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #7579e7;
-  }
-`;
-const HeroText = styled.h1`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 62px;
-  line-height: 68px;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  margin-top: 32px;
-  color: #000000;
+//   @media screen and (max-width: 900px) {
+//     width: 296px;
+//     height: 40px;
+//     font-family: Nunito;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 14px;
+//     line-height: 20px;
+//     text-align: center;
+//     letter-spacing: 0.04em;
+//     color: #7579e7;
+//   }
+// `;
+// const HeroText = styled.h1`
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 62px;
+//   line-height: 68px;
+//   display: flex;
+//   align-items: center;
+//   text-align: left;
+//   margin-top: 32px;
+//   color: #000000;
 
-  @media screen and (max-width: 900px) {
-    width: 320px;
-    height: 176px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 44px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
-`;
-const HeroButton = styled.button`
-  width: 250px;
-  height: 65px;
-  background: #7579e7;
-  border: 2px solid #ffffff;
-  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 16px;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 40px;
+//   @media screen and (max-width: 900px) {
+//     width: 320px;
+//     height: 176px;
+//     font-family: Nunito;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 36px;
+//     line-height: 44px;
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     color: #000000;
+//   }
+// `;
+// const HeroButton = styled.button`
+//   width: 250px;
+//   height: 65px;
+//   background: #7579e7;
+//   border: 2px solid #ffffff;
+//   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+//   border-radius: 16px;
+//   color: #ffffff;
+//   font-size: 20px;
+//   font-weight: bold;
+//   cursor: pointer;
+//   margin-top: 40px;
 
-  @media screen and (max-width: 900px) {
-    margin-top: 40px;
-  }
-`;
+//   @media screen and (max-width: 900px) {
+//     margin-top: 40px;
+//   }
+// `;
 
-const LinkStyle = styled(Link)`
-  color: white;
-`;
-const Right = styled.div`
-  @media screen and (min-width: 900px) {
-    flex: 1;
-    position: relative;
-    margin-top: 13rem;
-    margin-right: 124px;
-  }
-`;
+// const LinkStyle = styled(Link)`
+//   color: white;
+// `;
+// const Right = styled.div`
+//   @media screen and (min-width: 900px) {
+//     flex: 1;
+//     position: relative;
+//     margin-top: 13rem;
+//     margin-right: 124px;
+//   }
+// `;
 
-const HeroImg = styled.img`
-  width: 516px;
-  height: 803px;
-`;
-const Curve = styled.div`
-  width: 947px;
-  height: 599px;
-  background-color: #e5e5e5;
-  border-radius: 299.5px 0px 0px 0px;
-  position: absolute;
-  top: 20rem;
-  right: -15rem;
-  z-index: -10;
+// const HeroImg = styled.img`
+//   width: 516px;
+//   height: 803px;
+// `;
+// const Curve = styled.div`
+//   width: 947px;
+//   height: 599px;
+//   background-color: #e5e5e5;
+//   border-radius: 299.5px 0px 0px 0px;
+//   position: absolute;
+//   top: 20rem;
+//   right: -15rem;
+//   z-index: -10;
 
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
-`;
+//   @media screen and (max-width: 900px) {
+//     display: none;
+//   }
+// `;
 
-const Industries = styled.div`
+// const Industries = styled.div`
+//   width: 100%;
+//   height: 700px;
+//   margin-right: 3rem;
+//   z-index: 100;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   @media screen and (min-width: 760px) {
+//     width: 1296px;
+//     height: 200px;
+//     background: #fff;
+//     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08);
+//     border-radius: 24px;
+//     margin-top: -0.1rem;
+//     margin-left: 5rem;
+//     position: relative;
+//     padding-left: 56px;
+//     z-index: 30;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: flex-start;
+//   }
+// `;
+
+// const IndustryWrapper = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   @media screen and (min-width: 900px) {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: flex-start;
+//   }
+// `;
+// const IndustryContainer = styled.div`
+//   display: flex;
+//   justify-content: space-evenly;
+
+//   @media screen and (max-width: 900px) {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// `;
+// const IndustryText = styled.h1`
+//   font-style: normal;
+//   font-size: 28px;
+//   line-height: 48px;
+//   display: flex;
+//   align-items: center;
+//   color: #000000;
+// `;
+// const IndustryBox = styled.div`
+//   width: 203px;
+//   height: 62px;
+//   background: #cfdbfb;
+//   border-radius: 16px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 0 10px;
+//   margin-right: 26px;
+
+//   @media screen and (max-width: 900px) {
+//     margin-bottom: 33px;
+//   }
+// `;
+// const Icon = styled.div`
+//   width: 40px;
+//   height: 40px;
+//   background: #fff;
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-right: 24px;
+// `;
+// const IconText = styled.p`
+//   font-size: 10px;
+// `;
+
+const InformationContainer = styled.section`
+  background-color: #fff;
   width: 100%;
-  height: 700px;
-  margin-right: 3rem;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @media screen and (min-width: 760px) {
-    width: 1296px;
-    height: 200px;
-    background: #fff;
-    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08);
-    border-radius: 24px;
-    margin-top: -0.1rem;
-    margin-left: 5rem;
-    position: relative;
-    padding-left: 56px;
-    z-index: 30;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-`;
-
-const IndustryWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @media screen and (min-width: 900px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-`;
-const IndustryContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-
-  @media screen and (max-width: 900px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-`;
-const IndustryText = styled.h1`
-  font-style: normal;
-  font-size: 28px;
-  line-height: 48px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-`;
-const IndustryBox = styled.div`
-  width: 203px;
-  height: 62px;
-  background: #cfdbfb;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 10px;
-  margin-right: 26px;
-
-  @media screen and (max-width: 900px) {
-    margin-bottom: 33px;
-  }
-`;
-const Icon = styled.div`
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 24px;
-`;
-const IconText = styled.p`
-  font-size: 10px;
-`;
-
-const MainComponent = styled.section`
-  width: 100%;
-  height: 100vh;
-  background: #fff;
-  margin-top: -5rem;
-  z-index: 20;
+  height: 60vh;
   position: relative;
-  display: grid;
-  padding: 160px;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(6, 6rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.25rem;
 
-  @media screen and (max-width: 900px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  @media screen and (max-width: 250px) {
+    height: 40vh;
   }
+  @media screen and (max-width: 1224px) {
+    height: 35vh;
+  }
+`;
+
+const InformationWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 const ParaOne = styled.p`
-  grid-column: 3/ 14;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 60px;
-  color: #000000;
+  font-size: 1.25rem;
+  width: 15.75rem;
+  text-align: center;
 
-  @media screen and (max-width: 900px) {
-    width: 416px;
-    height: 200px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    color: #000000;
-  }
-  @media screen and (max-width: 400px) {
-    font-size: 18px;
-  }
-  @media screen and (max-width: 315px) {
-    font-size: 15px;
+  @media screen and (max-width: 250px) {
+    font-size: 0.5rem;
   }
 `;
 const ParaTwo = styled.p`
-  grid-row: 4/ 5;
-  grid-column: 7/-1;
-  font-weight: 100;
-  font-size: 26px;
-  line-height: 60px;
-  text-align: right;
-  color: #000000;
+  font-size: 1rem;
+  width: 15rem;
+  text-align: center;
+  margin-top: 8.06rem;
 
-  @media screen and (max-width: 900px) {
-    width: 269px;
-    height: 93px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-    text-align: center;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 18px;
-  }
-  @media screen and (max-width: 315px) {
-    font-size: 15px;
+  @media screen and (max-width: 250px) {
+    font-size: 0.5rem;
+    width: 7.75rem;
   }
 `;
-
-const Line = styled.div`
-  width: 160px;
-  height: 0px;
-  border: 1px dashed #cfdbfb;
-  transform: rotate(180deg);
-  position: absolute;
-  left: 50rem;
-  top: 18rem;
+const LineContainer = styled.div`
+  position: relative;
 `;
-const Line2 = styled.div`
-  width: 160px;
-  height: 0px;
-  border: 1px dashed #cfdbfb;
-  transform: rotate(-90deg);
-  position: absolute;
-  left: 55rem;
-  top: 23rem;
-`;
+// const Line = styled.div`
+//   width: 5.25rem;
+//   border: 1px dashed #cfdbfb;
+//   transform: rotate(-90deg);
+//   position: absolute;
+// `;
+// const Line2 = styled.div`
+//   width: 5.25rem;
+//   border: 1px dashed #cfdbfb;
+//   transform: rotate(-90deg);
+//   position: absolute;
+//   top: 1rem;
+//   background: red;
+// `;
 const Line3 = styled.div`
   width: 130px;
   height: 0px;
@@ -474,6 +447,10 @@ const Line3 = styled.div`
   position: absolute;
   left: 53rem;
   top: 17rem;
+
+  @media screen and (max-width: 1960px) {
+    display: none;
+  }
 `;
 const Line4 = styled.div`
   width: 150px;
@@ -483,6 +460,10 @@ const Line4 = styled.div`
   position: absolute;
   left: 56.5rem;
   top: 21.7rem;
+
+  @media screen and (max-width: 1960px) {
+    display: none;
+  }
 `;
 const Square = styled.div`
   width: 110px;
@@ -499,7 +480,6 @@ const Square2 = styled.div`
   height: 192px;
   background: url("../square.png") no-repeat;
   position: absolute;
-  // background-color: red;
   right: 0.1rem;
   bottom: -75rem;
   z-index: 100;
