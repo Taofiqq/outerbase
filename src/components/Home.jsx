@@ -31,45 +31,45 @@ export default function Home() {
       </Hero>
 
       <InformationContainer>
-        <Industries>
-          <IndustryWrapper>
-            <IndustryText>Industries Served</IndustryText>
-
-            <IndustryContainer>
-              <IndustryBox>
-                <Icon>
-                  <IndustryImage src={aviation} />
-                </Icon>
-                <IconText>Aviation</IconText>
-              </IndustryBox>
-              <IndustryBox>
-                <Icon>
-                  <IndustryImage src={file} />
-                </Icon>
-                <IconText>General Contracts</IconText>
-              </IndustryBox>
-              <IndustryBox>
-                <Icon>
-                  <IndustryImage src={code} />
-                </Icon>
-                <IconText>Information Technology</IconText>
-              </IndustryBox>
-              <IndustryBox>
-                <Icon>
-                  <IndustryImage src={house} />
-                </Icon>
-                <IconText>Real Estate</IconText>
-              </IndustryBox>
-              <IndustryBox>
-                <Icon>
-                  <IndustryImage src={security} />
-                </Icon>
-                <IconText>Security</IconText>
-              </IndustryBox>
-            </IndustryContainer>
-          </IndustryWrapper>
-        </Industries>
         <InformationWrapper>
+          <Industries>
+            <IndustryWrapper>
+              <IndustryText>Industries Served</IndustryText>
+
+              <IndustryContainer>
+                <IndustryBox>
+                  <Icon>
+                    <IndustryImage src={aviation} />
+                  </Icon>
+                  <IconText>Aviation</IconText>
+                </IndustryBox>
+                <IndustryBox>
+                  <Icon>
+                    <IndustryImage src={file} />
+                  </Icon>
+                  <IconText>General Contracts</IconText>
+                </IndustryBox>
+                <IndustryBox>
+                  <Icon>
+                    <IndustryImage src={code} />
+                  </Icon>
+                  <IconText>Information Technology</IconText>
+                </IndustryBox>
+                <IndustryBox>
+                  <Icon>
+                    <IndustryImage src={house} />
+                  </Icon>
+                  <IconText>Real Estate</IconText>
+                </IndustryBox>
+                <IndustryBox>
+                  <Icon>
+                    <IndustryImage src={security} />
+                  </Icon>
+                  <IconText>Security</IconText>
+                </IndustryBox>
+              </IndustryContainer>
+            </IndustryWrapper>
+          </Industries>
           <ParaOne>
             Incorporated in 2022, Outerbase is a specialist in the
             InformationTechnology and General Contracts Industry.
@@ -122,20 +122,20 @@ const Hero = styled.section`
   flex-direction: column;
   margin-top: 5.06rem;
 
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
+    margin-top: 6px;
   }
 `;
 const Left = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
-  margin-top: 116px;
+  margin-top: -11px;
 
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 1200px) {
     flex: 2;
   }
 `;
@@ -150,6 +150,14 @@ const HeroList = styled.p`
   letter-spacing: 0.04em;
   color: #7579e7;
   margin-bottom: 1.56rem;
+  @media screen and (min-width: 1200px) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0px;
+    letter-spacing: 0.04em;
+    color: #7579e7;
+  }
 `;
 const HeroText = styled.h1`
   height: 176px;
@@ -162,6 +170,19 @@ const HeroText = styled.h1`
   align-items: center;
   text-align: center;
   color: #000000;
+
+  @media screen and (min-width: 1200px) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 62px;
+    line-height: 68px;
+    display: flex;
+    align-items: center;
+    // text-align: left;
+    margin-top: 32px;
+    color: #000000;
+  }
+
   @media screen and (max-width: 299px) {
     font-size: 20px;
     line-height: 32px;
@@ -180,6 +201,19 @@ const HeroButton = styled.button`
   cursor: pointer;
   margin-top: 40px;
 
+  @media screen and (min-width: 1200px) {
+    width: 250px;
+    height: 65px;
+    background: #7579e7;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 299px) {
     width: 200px;
   }
@@ -194,10 +228,13 @@ const Right = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 3.5rem;
 
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 1200px) {
     flex: 1;
+    position: relative;
+    margin-top: 5rem;
+    margin-right: 124px;
   }
 `;
 
@@ -216,17 +253,17 @@ const HeroImg = styled.img`
 const InformationContainer = styled.section`
   background-color: #fff;
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 2.25rem;
+  padding: 0rem 2.25rem;
   z-index: -10;
 
-  @media screen and (min-width: 760px) {
-    height: 70vh;
+  @media screen and (min-width: 1200px) {
+    height: 100vh;
   }
 `;
 
@@ -235,13 +272,13 @@ const Industries = styled.div`
   padding-right: 1.38rem;
   margin-bottom: 6.63rem;
 
-  @media screen and (min-width: 760px) {
-    display: none;
+  @media screen and (min-width: 1200px) {
+    // display: none;
   }
 `;
 
 const IndustryWrapper = styled.div`
-  width: 346px;
+  width: 306px;
   height: 620px;
   display: flex;
   flex-direction: column;
@@ -254,11 +291,10 @@ const IndustryWrapper = styled.div`
   margin-top: -22rem;
 
   @media screen and (min-width: 760px) {
-    width: 36rem;
+    width: 76rem;
     height: 15rem;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08);
-    // margin-left: 6rem;
-    // margin-right: 6rem;
+    margin-top: -16rem;
   }
 `;
 const IndustryContainer = styled.div`
@@ -290,6 +326,9 @@ const IndustryBox = styled.div`
   justify-content: center;
   padding: 0 10px;
   margin-bottom: 33px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 33px;
+  }
 `;
 const IndustryImage = styled.img`
   width: 24px;
@@ -313,6 +352,7 @@ const InformationWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  // padding-bottom: 5rem;
 `;
 const ParaOne = styled.p`
   font-size: 1.25rem;
@@ -327,8 +367,7 @@ const ParaTwo = styled.p`
   font-size: 1rem;
   width: 15rem;
   text-align: center;
-  margin-top: 8.06rem;
-
+  margin-top: 6.06rem;
   @media screen and (max-width: 250px) {
     font-size: 0.5rem;
     width: 7.75rem;
