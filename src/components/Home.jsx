@@ -120,7 +120,7 @@ const Hero = styled.section`
   margin-top: 5.06rem;
 
   @media screen and (min-width: 1100px) {
-    margin-top: 11rem;
+    // margin-top: 11rem;
     display: flex;
     flex-direction: row;
   }
