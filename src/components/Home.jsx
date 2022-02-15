@@ -70,21 +70,18 @@ export default function Home() {
               </IndustryContainer>
             </IndustryWrapper>
           </Industries>
-          <ParaOne>
-            Incorporated in 2022, Outerbase is a specialist in the
-            InformationTechnology and General Contracts Industry.
-            {/* Hello */}
-          </ParaOne>
-          {/* <Line></Line>
-          <Line2></Line2> */}
-          <ParaTwo>
-            Outerbase caters to the unique requirements ofits users until 100%
-            satisfaction is achieved
-          </ParaTwo>
-        </InformationWrapper>
+          <Grid>
+            <ParaOne>
+              Incorporated in 2022, Outerbase is a specialist in the
+              InformationTechnology and General Contracts Industry.
+            </ParaOne>
 
-        <Line3></Line3>
-        <Line4></Line4>
+            <ParaTwo>
+              Outerbase caters to the unique requirements ofits users until 100%
+              satisfaction is achieved
+            </ParaTwo>
+          </Grid>
+        </InformationWrapper>
       </InformationContainer>
       <LineContainer></LineContainer>
 
@@ -122,9 +119,10 @@ const Hero = styled.section`
   flex-direction: column;
   margin-top: 5.06rem;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1100px) {
+    // margin-top: 11rem;
+    display: flex;
     flex-direction: row;
-    margin-top: 6px;
   }
 `;
 const Left = styled.div`
@@ -135,8 +133,14 @@ const Left = styled.div`
   padding-right: 2.4rem;
   margin-top: -11px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1100px) {
+    // flex: 2;
+    // padding-left: 14.25rem;
+
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 176px;
   }
 `;
 const HeroList = styled.p`
@@ -150,13 +154,9 @@ const HeroList = styled.p`
   letter-spacing: 0.04em;
   color: #7579e7;
   margin-bottom: 1.56rem;
-  @media screen and (min-width: 1200px) {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 0px;
-    letter-spacing: 0.04em;
-    color: #7579e7;
+
+  @media screen and (min-width: 1100px) {
+    font-size: 1.25rem;
   }
 `;
 const HeroText = styled.h1`
@@ -171,16 +171,16 @@ const HeroText = styled.h1`
   text-align: center;
   color: #000000;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1100px) {
+    height: 176px;
+    font-family: Nunito;
     font-style: normal;
     font-weight: normal;
-    font-size: 62px;
-    line-height: 68px;
-    display: flex;
-    align-items: center;
-    // text-align: left;
-    margin-top: 32px;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
     color: #000000;
+    width: 48.25rem;
+    margin-top: 32px;
   }
 
   @media screen and (max-width: 299px) {
@@ -201,19 +201,9 @@ const HeroButton = styled.button`
   cursor: pointer;
   margin-top: 40px;
 
-  @media screen and (min-width: 1200px) {
-    width: 250px;
-    height: 65px;
-    background: #7579e7;
-    border: 2px solid #ffffff;
-    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+  @media screen and (min-width: 1100px) {
+    margin-top: 96px;
   }
-
   @media screen and (max-width: 299px) {
     width: 200px;
   }
@@ -230,10 +220,14 @@ const Right = styled.div`
   align-items: center;
   margin-top: 3.5rem;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 900px) {
+    margin-top: -13rem;
+  }
+
+  @media screen and (min-width: 1100px) {
     flex: 1;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 7rem;
     margin-right: 124px;
   }
 `;
@@ -244,6 +238,10 @@ const HeroImg = styled.img`
   object-fit: contain;
   z-index: -10;
 
+  // @media screen and (min-width: 1100px) {
+  //   width: 30rem;
+  //   height: 40rem;
+  // }
   @media screen and (max-width: 299px) {
     width: 20rem;
     height: 30rem;
@@ -262,8 +260,14 @@ const InformationContainer = styled.section`
   padding: 0rem 2.25rem;
   z-index: -10;
 
-  @media screen and (min-width: 1200px) {
-    height: 100vh;
+  @media screen and (min-width: 760px) {
+    height: 70vh;
+  }
+  @media screen and (min-width: 1100px) {
+    height: 70vh;
+  }
+  @media screen and (min-width: 2000px) {
+    height: 30vh;
   }
 `;
 
@@ -291,10 +295,17 @@ const IndustryWrapper = styled.div`
   margin-top: -22rem;
 
   @media screen and (min-width: 760px) {
+    margin-top: -26rem;
+  }
+  @media screen and (min-width: 1100px) {
     width: 76rem;
     height: 15rem;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08);
-    margin-top: -16rem;
+    margin-top: -15rem;
+  }
+  @media screen and (min-width: 2000px) {
+    width: 125rem;
+    height: 15rem;
   }
 `;
 const IndustryContainer = styled.div`
@@ -302,7 +313,7 @@ const IndustryContainer = styled.div`
   flex-direction: column;
   padding-bottom: 5rem;
 
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 1100px) {
     flex-direction: row;
   }
 `;
@@ -354,6 +365,8 @@ const InformationWrapper = styled.div`
   align-items: center;
   // padding-bottom: 5rem;
 `;
+
+const Grid = styled.div``;
 const ParaOne = styled.p`
   font-size: 1.25rem;
   width: 15.75rem;
