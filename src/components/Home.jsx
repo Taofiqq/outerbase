@@ -403,32 +403,7 @@ const LineContainer = styled.div`
 //   top: 1rem;
 //   background: red;
 // `;
-const Line3 = styled.div`
-  width: 130px;
-  height: 0px;
-  border: 1px dashed #cfdbfb;
-  transform: rotate(180deg);
-  position: absolute;
-  left: 53rem;
-  top: 17rem;
 
-  @media screen and (max-width: 1960px) {
-    display: none;
-  }
-`;
-const Line4 = styled.div`
-  width: 150px;
-  height: 0px;
-  border: 1px dashed #cfdbfb;
-  transform: rotate(-90deg);
-  position: absolute;
-  left: 56.5rem;
-  top: 21.7rem;
-
-  @media screen and (max-width: 1960px) {
-    display: none;
-  }
-`;
 const Square = styled.div`
   width: 110px;
   height: 192px;
