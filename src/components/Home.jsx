@@ -83,7 +83,6 @@ export default function Home() {
           </Grid>
         </InformationWrapper>
       </InformationContainer>
-      <LineContainer></LineContainer>
 
       <ContactWrapper>
         <ContactContainer>
@@ -386,9 +385,9 @@ const ParaTwo = styled.p`
     width: 7.75rem;
   }
 `;
-const LineContainer = styled.div`
-  position: relative;
-`;
+// const LineContainer = styled.div`
+//   position: relative;
+// `;
 // const Line = styled.div`
 //   width: 5.25rem;
 //   border: 1px dashed #cfdbfb;
